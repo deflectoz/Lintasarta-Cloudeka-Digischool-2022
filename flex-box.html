@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex-Box</title>
+</head>
+<style>
+    .container {
+        display: flex;
+        flex-direction: column;
+        /*Vertical Mode */
+
+        /* row : merupakan nilai default, di mana deretan flex-item pada container ditampilkan secara horizontal.
+        row-reverse : memiliki sifat yang sama seperti row, namun urutan flex item-nya ditukar.
+        column : Deretan flex-item pada container ditampilkan secara vertikal.
+        column-reverse : memiliki sifat yang sama seperti column, namun urutan flex item- */
+
+        width: 800px;
+        height: 250px;
+        background-color: #11C5C6;
+        border: 2px solid black;
+        padding: 20px;
+        border-radius: 10px;
+        margin: 0 auto;
+    }
+
+    .flex-row{
+        display: flex;
+        flex-direction: row;
+        flex-grow: 1;
+
+        padding: 20px;
+        margin: 5px;
+        background-color: #fbdd1c;
+        border: 2px solid black;
+        border-radius: 10px;
+    }
+
+    .box {
+        flex-grow: 1;
+        /* background-color: #fbdd1c; */
+        margin: 5px;
+        border: 2px solid black;
+        border-radius: 10px;
+        background-color: #Fe899a;
+
+    }
+/* 
+    .first {
+        flex-grow: 1;
+    }
+
+    .second {
+        flex-grow: 1;
+    }
+
+    .third {
+        flex-grow: 2;
+    } */
+</style>
+
+<body>
+    <div class="container">
+        <div class="flex-row">
+            <div class="box ">1</div>
+            <div class="box ">2</div>
+            <div class="box ">3</div>
+        </div>
+        <div class="flex-row">
+            <div class="box ">1</div>
+            <div class="box ">2</div>
+            <div class="box ">3</div>
+        </div>
+
+    </div>
+</body>
+
+</html>
